@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header>
+        <img src="mbulogo2.jpg" alt="logo" class="logo">
+        <h1>Mohan Babu University</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Register for an Event</h2>
+            <form id="eventForm" action="submit_event.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="event">Event Name:</label>
+                <input type="text" id="event" name="event" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Upcoming Events</h2>
+            <div id="event-list">
+                <div class="card-container">
+                    <div class="card">
+                        <img src="event1.jpg" alt="Card 1">
+                        <div class="card-content">
+                            <h3>MOHANA MANTRA</h3>
+                            <p> Mohan Manthra, the flagship cultural event of MBU University, is an exhilarating blend of creativity, talent, and tradition. This year’s edition promises to be bigger and more vibrant, celebrating the spirit of youth, art, and community. Spread over three days, the event will feature a variety of activities and performances, including music concerts, dance competitions, theater, art exhibitions, and literary contests.</p>
+
+                            <button>register</button>
+                        </div>
+                    </div>
+            
+                    <div class="card">
+                        <img src="event2.jpg" alt="Card 2">
+                        <div class="card-content">
+                            <h3>ISTE Technical Fest - Innovate, Inspire, Impact</h3>
+                            <p>The ISTE (Indian Society for Technical Education) Chapter of MBU University is proud to present its annual Technical Fest, a dynamic platform for students to showcase their technical prowess, innovative solutions, and engineering skills. The event is designed to foster creativity, problem-solving, and collaboration among young engineers and tech enthusiasts..</p>
+
+                            <button>register</button>
+                        </div>
+                    </div>
+            
+                    <div class="card">
+                        <img src="event3.jpg" alt="Card 3">
+                        <div class="card-content">
+                            <h3>MBU Flash Mob - Dance for Unity</h3>
+                            <p> Get ready for an electrifying and spontaneous celebration at MBU University as we host an exhilarating Flash Mob! Known for its element of surprise and excitement, the Flash Mob will see a large group of students and faculty break into a coordinated, high-energy dance routine at a seemingly random time and place on campus.</p>
+
+                            <button>register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+ 
+
+    <script src="script.js"></script>
+</body>
+</html>
